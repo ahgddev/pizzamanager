@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "65dc0f6b37f4ea23287ed991"
+  },
+  "topping_id": 1,
+  "name": "spinach",
+  "type": "vegetable",
+  "serving_size": "1 cup",
+  "price_per_serving": "1"
+},
+{
+  "_id": {
+    "$oid": "65dc0f8037f4ea23287ed993"
+  },
+  "topping_id": 2,
+  "name": "onion",
+  "type": "vegetable",
+  "serving_size": "1 cup",
+  "price_per_serving": ".75"
+},
+{
+  "_id": {
+    "$oid": "65dc0f9837f4ea23287ed995"
+  },
+  "topping_id": 3,
+  "name": "pepper",
+  "type": "vegetable",
+  "serving_size": "1/2 cup",
+  "price_per_serving": "1.25"
+},
+{
+  "_id": {
+    "$oid": "65dc0fa237f4ea23287ed997"
+  },
+  "topping_id": 4,
+  "name": "pepperoni",
+  "type": "meat",
+  "serving_size": "20 slices",
+  "price_per_serving": 2
+},
+{
+  "_id": {
+    "$oid": "65dcd708f6767aa33bd51fce"
+  },
+  "topping_id": 5,
+  "name": "sausage",
+  "type": "vegetable",
+  "serving_size": "20 slices",
+  "price_per_serving": "2"
+},
+{
+  "_id": {
+    "$oid": "65dce1d3bdbfc2806952dda7"
+  },
+  "topping_id": 6,
+  "name": "cappola",
+  "type": "meat",
+  "serving_size": "5 oz",
+  "price_per_serving": 2
+},
+{
+  "_id": {
+    "$oid": "65dd06e36ac704e42e6d3b5d"
+  },
+  "topping_id": 7,
+  "name": "black beans",
+  "type": "vegetable",
+  "serving_size": "1/2 cup",
+  "price_per_serving": 3
+},
+{
+  "_id": {
+    "$oid": "65de0c2fb90bcccb6a615c2c"
+  },
+  "topping_id": 9,
+  "name": "ground beef",
+  "type": "meat",
+  "serving_size": "1/2 a cup",
+  "price_per_serving": 1.5
+}]

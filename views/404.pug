@@ -1,0 +1,30 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet', href='/styles.css')
+  block scripts
+  title Pizza Manager
+  - var managerT = managerType
+header
+  h1 Pizza Manager
+main
+  nav#sideBar
+    img(src='/iconmonstr-cook-3-96.png', alt='user_image')
+    p#userHello
+      | Hello 
+      em Chef
+    p#userTitle Manager
+    ul
+      li
+        a(href="/pizzas/all") Pizza Manager
+      li
+        a(href="/toppings/all") Toppings Manager
+  section#productSection
+  style(type="text/css").
+        p {
+        padding: 2%;
+         } 
+  p #{messageAlert}
+footer
+  // Sources go here, also c me!

@@ -1,0 +1,40 @@
+extends default 
+
+block scripts
+    script(type="text/javascript", src='/pizzasHelpers.js')
+
+block formContent
+
+
+block productContent
+  head
+    link(rel='stylesheet', href='/pizzaFormContent.css')
+
+  h1 Pizza Masterpieces
+  #pizzaListModifications
+    form(method='GET', action=base_url + "filter")
+        select#productFilter(name='q' onchange='this.form.submit()')
+            option(value='') 
+            option(value='alphabetical') Alphabetical
+            option(value='ascending') Price: High to Low
+            option(value='descending') Price: Low to High
+    button(onclick=`makeNewPizzaForm(${JSON.stringify(toppingData)})`) Add Pizza
+
+  #productList 
+   if baseURL
+    p #{messageAlert}
+   else
+    each product in productData 
+        .productItem
+            h2 Name #{product.name}
+            p ID #{product.pizza_id} 
+            ul Ingredients
+            each topping in product.ingredients
+                li= topping
+            p Whole Price $#{product.whole_price}
+            p Slice Price $#{product.slice_price}
+            .itemButtons
+                button(onclick=`makeUpdateForm(${JSON.stringify(product)},${JSON.stringify(toppingData)})`) Edit
+                form#deleteForm(method='POST', action=base_url+product.pizza_id+"?_method=delete&id="+product.pizza_id)
+                    <input type="hidden" name="_method" value="delete"/>
+                    button(name="id" value=product.pizza_id onclick="this.form.submit()") Delete

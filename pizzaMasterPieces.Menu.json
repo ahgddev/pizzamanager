@@ -1,0 +1,46 @@
+[{
+  "_id": {
+    "$oid": "65dd650f0088abf187fc88c0"
+  },
+  "pizza_id": 1,
+  "name": "Extra Meat Lover",
+  "ingredients": [
+    "pepperoni",
+    "sausage",
+    "cappola",
+    "black beans"
+  ],
+  "whole_price": 22,
+  "slice_price": 4
+},
+{
+  "_id": {
+    "$oid": "65dd65320088abf187fc88c2"
+  },
+  "pizza_id": 2,
+  "name": "Extra Veggie Lovers",
+  "ingredients": [
+    "pepper",
+    "mushroom",
+    "onion"
+  ],
+  "whole_price": 17,
+  "slice_price": 3
+},
+{
+  "_id": {
+    "$oid": "65dd65600088abf187fc88c4"
+  },
+  "pizza_id": 3,
+  "name": "Veggie Meat Mixer",
+  "ingredients": [
+    "spinach",
+    "onion",
+    "pepper",
+    "pepperoni",
+    "sausage",
+    "black beans"
+  ],
+  "whole_price": 26,
+  "slice_price": 3
+}]

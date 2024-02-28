@@ -1,0 +1,41 @@
+extends default 
+
+block scripts
+    script(type="text/javascript", src='/toppingsHelpers.js')
+
+block formContent
+
+
+block productContent
+  head
+    link(rel='stylesheet', href='/toppingFormContent.css')
+
+  h1 Toppings
+
+  #toppingListModifications
+    form(method='GET', action=base_url + "filter")
+        select#productFilter(name='q' onchange='this.form.submit()')
+            option(value='') 
+            option(value='alphabetical') Alphabetical
+            option(value='ascending') Price: High to Low
+            option(value='descending') Price: Low to High
+    button(onclick="makeNewToppingForm()") Add Topping
+
+  #productList 
+   if baseURL
+    p #{messageAlert}
+   else
+    each product in productData 
+        .productItem
+            h2 Name #{product.name}
+            p ID #{product.topping_id} 
+            p Type #{product.type}
+            p Serving Size #{product.serving_size}
+            p Price per Serving #{product.price_per_serving}
+            .itemButtons
+                button(onclick=`makeUpdateForm(${JSON.stringify(product)})`) Edit
+                form#deleteForm(method='POST', action=base_url +product.topping_id+"?_method=delete&id="+product.topping_id)
+                    <input type="hidden" name="_method" value="delete"/>
+                    button(name="id" value=product.topping_id onclick="this.form.submit()") Delete
+        
+            

@@ -1,0 +1,91 @@
+#newPizzaForm {
+  background-color: rgb(159, 196, 167);
+  width: 30%;
+  padding: 1%;
+  top: 50%;
+  left: 40%;
+  position: fixed;
+  border-radius: 6px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#newPizzaForm * {
+  border-radius: 3px;
+  margin-top: 2%;
+}
+
+#newPizzaForm h1 {
+  text-align: center;
+}
+
+#updateForm {
+  background-color: rgb(132, 177, 102);
+  width: 30%;
+  padding: 1%;
+  top: 40%;
+  left: 40%;
+  position: fixed;
+  border-radius: 6px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#updateForm * {
+  border-radius: 3px;
+  margin-top: 2%;
+}
+
+#updateForm h1 {
+  text-align: center;
+}
+
+/* Product List Modifications and List */
+
+#pizzaListModifications {
+  padding-left: 2%;
+  width: 70%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+#pizzaListModifications form {
+  width: 80%;
+  display: inline-block;
+}
+
+/* Products */
+#productSection {
+  width: 70%;
+}
+
+#productList {
+  padding: 1%;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  width: 100%;
+}
+
+.productItem {
+  width: 25%;
+}
+
+.productItem p {
+  border-bottom: solid 1px green;
+  border-width: 80%;
+  padding: 1%;
+}
+
+.itemButtons {
+  width: 100%;
+}
+
+.itemButtons button {
+  border: solid 1px rgb(4, 48, 4);
+  margin-right: 30%;
+}
+.itemButtons form {
+  display: inline-block;
+}

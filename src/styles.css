@@ -1,0 +1,42 @@
+body {
+  background-color: rgb(189, 228, 199);
+  font-family: "Inter", "Arial";
+}
+
+main {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#sideBar {
+  width: 20%;
+  padding: 1%;
+  border-left: solid 3px rgb(104, 9, 9);
+  border-right: solid 3px rgb(104, 9, 9);
+  text-align: center;
+}
+
+#sideBar ul {
+  list-style: none;
+  padding: 0;
+}
+
+#searchContainer p {
+  padding: 1%;
+}
+
+#searchContainer form {
+  padding: 1%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+}
+
+#searchBar {
+  line-height: 1.4em;
+}
+
+#searchContainer input,
+#searchContainer button {
+  pointer-events: none;
+}

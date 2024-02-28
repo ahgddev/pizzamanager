@@ -1,0 +1,39 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet', href='/styles.css')
+  link(rel='preconnect', href='https://fonts.googleapis.com')
+  link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap', rel='stylesheet')
+  block scripts
+  title Pizza Manager
+  - var managerT = managerType
+header
+  h1 Pizza Manager
+main
+  nav#sideBar
+    img(src='/iconmonstr-cook-3-96.png', alt='user_image')
+    p#userHello
+      | Hello 
+      em Chef
+    p#userTitle Manager
+    ul
+      li
+        a(href="/pizzas/all") Pizza Manager
+      li
+        a(href="/toppings/all") Toppings Manager
+  section#productSection
+    #searchContainer
+      form(action=`${managerT}/search`, method="GET") 
+        input#searchBar(type='search', name='name', placeholder=`Search ${managerT}`)
+        button#searchBarButton(type='submit')
+          img(src='/iconmonstr-magnifier-lined-24.png', alt='search_icon')
+      p #{welcomeMessage}
+    #productList
+      block productContent
+  section
+    #submitNewForm
+      block formContent
+footer
+  // Sources go here, also c me!
