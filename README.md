@@ -34,8 +34,8 @@ The app can be tested by using an application like Postman, Thunderclient, etc. 
 Add your *pizzaDB* connection string to the application's header option with the key name ATLAS_URI.
 Replace "baseURL" in the urls below with the word toppings or pizzas to test out the API. Both have full CRUD capabilities.
 
-| ----------- | ----------- | ----------- |
-| URL | Expected Req Type | Response  |
+| URL      | Expected Req Type | Response    |
+| :-------- | ----------- | :----------- |
 | http://localhost:PORTNumberHere/ | GET or POST |  GET - Styled page loads, 200 OK Response with HTML file.
 POST - User is sent to "Topping added" page on successful request. 200 OK Response
 | http://localhost:PORTNumberHere/baseURL/ | GET |  Styled page loads, 200 OK Response with a HTML file.
