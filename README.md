@@ -36,17 +36,12 @@ Replace "baseURL" in the urls below with the word toppings or pizzas to test out
 
 | URL      | Expected Req Type | Response    |
 | :-------- | ----------- | :----------- |
-| http://localhost:PORTNumberHere/ | GET or POST |  GET - Styled page loads, 200 OK Response with HTML file.
-POST - User is sent to "Topping added" page on successful request. 200 OK Response
+| http://localhost:PORTNumberHere/ | GET or POST |  GET - Styled page loads, 200 OK Response with HTML file.\POST - User is sent to "Topping added" page on successful request. 200 OK Response
 | http://localhost:PORTNumberHere/baseURL/ | GET |  Styled page loads, 200 OK Response with a HTML file.
 | http://localhost:PORTNumberHere/baseURL/all | GET |  Page loads all toppings/pizzas in database, 200 OK Response with toppings/pizzas in a HTML file.
-| http://localhost:PORTNumberHere/baseURL/search?name=  | GET |  Page loads toppings/pizzas that match the given search query. Query can be partial words (Like ext) and include spaces. For example, searching up "Ext" will bring up pizzas with the word "Extra" in them. *Search only works on topping/pizza names*
-Example URL http://localhost:3000/toppings/search?name=onion will bring up the topping named onion. Sends a 200 OK Response with toppings/pizzas in a HTML file.
-|http://localhost:PORTNumberHere/baseURL/filter?q=  | GET |  GET - Page loads all toppings/pizzas in the specified order. For pizzas, sorting by price is based on the *Slice Price*.
-Example URL http://localhost:PORTNumberHere/baseURL/filter?q=alphabetical will bring up all toppings/pizzas in alphabetical order. Sends a 200 OK Response with toppings/pizzas in a HTML file.
-|http://localhost:PORTNumberHere/baseURL/id  | GET, DELETE, PATCH |  GET - Page loads the topping/pizza with a certain ID. Sends a 200 OK Response with toppings/pizzas in HTML file.
-DELETE - Deletes the topping/pizza from the database. Sends a 200 OK Response with a "Topping/Pizza Delete" HTML file.
-PATCH - Edits a topping.  Sends a 200 OK Response with a "Topping/Pizza Added" HTML file.|
+| http://localhost:PORTNumberHere/baseURL/search?name=  | GET |  Page loads toppings/pizzas that match the given search query. Query can be partial words (Like ext) and include spaces. For example, searching up "Ext" will bring up pizzas with the word "Extra" in them. *Search only works on topping/pizza names*\Example URL http://localhost:3000/toppings/search?name=onion will bring up the topping named onion. Sends a 200 OK Response with toppings/pizzas in a HTML file.
+|http://localhost:PORTNumberHere/baseURL/filter?q=  | GET |  GET - Page loads all toppings/pizzas in the specified order. For pizzas, sorting by price is based on the *Slice Price*.\Example URL http://localhost:PORTNumberHere/baseURL/filter?q=alphabetical will bring up all toppings/pizzas in alphabetical order. Sends a 200 OK Response with toppings/pizzas in a HTML file.
+|http://localhost:PORTNumberHere/baseURL/id  | GET, DELETE, PATCH |  GET - Page loads the topping/pizza with a certain ID. Sends a 200 OK Response with toppings/pizzas in HTML file.\DELETE - Deletes the topping/pizza from the database. Sends a 200 OK Response with a "Topping/Pizza Delete" HTML file.\PATCH - Edits a topping.  Sends a 200 OK Response with a "Topping/Pizza Added" HTML file.|
 
 - Topping/Pizza object format
 When adding or editing a topping/pizza it must be sent in JSON format. The properties for toppings/pizzas are as follows
