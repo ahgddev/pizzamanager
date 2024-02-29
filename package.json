@@ -19,6 +19,7 @@
   },
   "engines": {
     "start": "node server.mjs",
-    "node": "20.x"
+    "node": "20.x",
+    "npm": "10.2.5"
   }
 }

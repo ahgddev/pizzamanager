@@ -8,7 +8,6 @@ import methodOverride from "method-override";
 import pug from "pug";
 dotenv.config();
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 //Middleware
 app.use(methodOverride("_method"));
@@ -17,7 +16,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(".", "src")));
 
 //Views
-app.set("port", PORT);
 app.set("views", "./views");
 app.set("view engine", "pug");
 // const pug = require('pug');
@@ -47,6 +45,6 @@ try {
   app.use(errorHandler());
 }
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("Listening....");
 });
