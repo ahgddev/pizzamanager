@@ -36,8 +36,7 @@ Replace "baseURL" in the urls below with the word toppings or pizzas to test out
 
 | URL      | Expected Req Type | Response    |
 | :-------- | ----------- | :----------- |
-| http://localhost:PORTNumberHere/ | GET or POST |  GET - Styled page loads, 200 OK Response with HTML file.  
-POST - User is sent to "Topping added" page on successful request. 200 OK Response
+| http://localhost:PORTNumberHere/ | GET or POST |  GET - Styled page loads, 200 OK Response with HTML file.<br>POST - User is sent to "Topping added" page on successful request. 200 OK Response
 | http://localhost:PORTNumberHere/baseURL/ | GET |  Styled page loads, 200 OK Response with a HTML file.
 | http://localhost:PORTNumberHere/baseURL/all | GET |  Page loads all toppings/pizzas in database, 200 OK Response with toppings/pizzas in a HTML file.
 | http://localhost:PORTNumberHere/baseURL/search?name=  | GET |  Page loads toppings/pizzas that match the given search query. Query can be partial words (Like ext) and include spaces. For example, searching up "Ext" will bring up pizzas with the word "Extra" in them. *Search only works on topping/pizza names*  Example URL http://localhost:3000/toppings/search?name=onion will bring up the topping named onion. Sends a 200 OK Response with toppings/pizzas in a HTML file.
