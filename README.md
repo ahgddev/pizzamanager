@@ -81,7 +81,7 @@ The error handling routes and middleware were not working. For example putting i
 - add a route that would try to catch undefined routes with regex
 - try/catch in the route files and the server.mjs file.
 - if/else based on res status code to render the 404 page.
-- Ask the course teacher assistant for help (she couldn't figure it out either).
+- Asked a teacher's assistant for help (she couldn't figure it out either).
 
 ## Improvements
 Things I'd like to improve or modify in my app;
