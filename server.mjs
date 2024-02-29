@@ -17,6 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(".", "src")));
 
 //Views
+app.set("port", PORT);
 app.set("views", "./views");
 app.set("view engine", "pug");
 // const pug = require('pug');
