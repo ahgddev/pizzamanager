@@ -2,7 +2,7 @@
 import { MongoClient } from "mongodb";
 import dotenv from "dotenv";
 dotenv.config();
-const connectionString = process.env.MONGO_URI;
+const connectionString = process.env.ATLAS_URI;
 const client = new MongoClient(connectionString);
 let conn;
 try {
