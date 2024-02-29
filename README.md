@@ -86,6 +86,6 @@ The error handling routes and middleware were not working. For example putting i
 ## Improvements
 Things I'd like to improve or modify in my app;
 - Fix the error handling
-- Add Stock and Last update/Creation Dates for toppings/pizzas
+- Add Stock and Last Update/Creation Dates for toppings/pizzas
 - Enable searching by more than just the topping/pizza name
 - Enable sorting by more than just names in Alphabetical Order/Price
